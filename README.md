@@ -1,6 +1,6 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Денис Верхотуров](https://up.htmlacademy.ru/adaptive/10/user/56756).
+* Студент: [Соловьёва Майя](https://up.htmlacademy.ru/adaptive/10/user/60303).
 * Наставник: `Неизвестно`.
 
 ---
