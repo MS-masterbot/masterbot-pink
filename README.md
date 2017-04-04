@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [](https://up.htmlacademy.ru/adaptive//user/).
-* Наставник: `Неизвестно`.
+* Студент: [Майя Соловьева](https://up.htmlacademy.ru/adaptive/7/user/60303).
+* Наставник: [Юлия Бухвалова](https://htmlacademy.ru/profile/id114660).
 
 ---
 
