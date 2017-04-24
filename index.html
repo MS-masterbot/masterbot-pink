@@ -6,7 +6,176 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+
+  <header class="page-header">
+
+    <nav class="main-nav  main-nav--closed">
+
+      <ul class="main-nav__list">
+        <li class="main-nav__item">Главная</li>
+        <li class="main-nav__item"><a href="#">Фотографии</a></li>
+        <li class="main-nav__item"><a href="#">Конкурс</a></li>
+        <li class="main-nav__item"><a href="#">HMTL Academy</a></li>
+      </ul>
+
+      <div class="page-header__top">
+        <div class="logo  page-header__logo">
+        </div>
+        <button class="main-nav__toggle">
+        </button>
+      </div>
+
+    </nav>
+
+
+    <section class="download">
+
+      <button class="download__btn">Скачать приложение</button>
+
+        <ul class="download__icons-list">
+          <li class="download__icon  download__icon--apple"><a href="#">Apple</a></li>
+          <li class="download__icon  download__icon--android"><a href="#">Android</a></li>
+          <li class="download__icon  download__icon--win"><a href="#">Win</a></li>
+        </ul>
+
+        <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+
+    </section>
+
+
+    <main>
+
+    <section class="advantages">
+
+    <header class="advantages__header">
+      <h2>Устали от серости мегаполиса?</h2>
+      <h2>Нам есть, что вам предложить!</h2>
+    </header>
+
+    <div class="advantages__item">
+      <h3>Поднимает настроение</h3>
+      <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+    </div>
+
+    <div class="advantages__item">
+      <h3>Меняет мир вокруг</h3>
+      <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+    </div>
+
+    <div class="advantages__item">
+      <h3>Заводит новых друзей</h3>
+      <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+    </div>
+
+    </section>
+
+
+    <section class="reviews">
+
+      <div class="reviews__wrapper  slider">
+
+        <input class="slider__input" type="radio" name="reviews" id="reviews__input-1" checked>
+        <input class="slider__input" type="radio" name="reviews" id="reviews__input-2">
+        <input class="slider__input" type="radio" name="reviews" id="reviews__input-3">
+
+        <ul class="reviews__list">
+          <li class="reviews__item  slider__item">
+            <h3>Николай Петров</h3>
+            <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </li>
+        </ul>
+
+        <div class="reviews__toggles  slider__toggles">
+          <label class="reviews__toggle" for="reviews__input-1">1</label>
+          <label class="reviews__toggle" for="reviews__input-2">2</label>
+          <label class="reviews__toggle" for="reviews__input-3">3</label>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section class="pricelist">
+
+      <div class="pricelist__wrapper  slider">
+
+        <input class="slider__input" type="radio" name="pricelist" id="pricelist__input-1">
+        <input class="slider__input" type="radio" name="pricelist" id="pricelist__input-2" checked>
+        <input class="slider__input" type="radio" name="pricelist" id="pricelist__input-3">
+
+        <table class="pricelist__table">
+
+        <tr>
+          <th class="pricelist__caption">
+            <span class="pricelist__tariff"></span>
+            <span class="pricelist__price"></span>
+          </th>
+          <td class="pricelist__item">
+            <span class="pricelist__item-name"></span>
+            <span class="pricelist__option  pricelist__option--on"></span>
+          </td>
+          <td class="pricelist__item">
+            <span class="pricelist__item-name"></span>
+            <span class="pricelist__option  pricelist__option--on"></span>
+          </td>
+          <td class="pricelist__item">
+            <span class="pricelist__item-name"></span>
+            <span class="pricelist__option  pricelist__option--off"></span>
+          </td>
+        </tr>
+
+        </table>
+
+        <div class="pricelist__toggles  slider__toggles">
+          <label class="pricelist__toggle" for="pricelist__input-1"></label>
+          <label class="pricelist__toggle" for="pricelist__input-2"></label>
+          <label class="pricelist__toggle" for="pricelist__input-3"></label>
+        </div>
+
+      </div>
+
+    </section>
+
+    </main>
+
+    <footer class="page-footer">
+
+    <section class="contacts">
+
+        <h2 class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
+
+        <div class="contacts__list">
+
+          <li class="contacts__item">
+            <h3>Звоните:</h3>
+            <p>
+              <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </p>
+          </li>
+
+          <li class="contacts__item">
+            <h3>Пишите:</h3>
+            <p>
+              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+          </li>
+
+          <li class="contacts__item">
+            <h3>Приезжайте в гости:</h3>
+            <p>ул. Большая Конюшенная, 19/8</p>
+          </li>
+
+        </div>
+
+    </section>
+
+    <section class="map"></section>
+
+    </footer>
+
+
+  </header>
+
 
   </body>
 </html>
