@@ -13,8 +13,8 @@
 
       <div class="page-header__top">
 
-        <div class="logo  page-header__logo">
-        </div>
+        <h1 class="logo  page-header__logo">Pink
+        </h1>
 
         <button class="page-header__nav-toggle">
         </button>
@@ -35,13 +35,15 @@
 
     <section class="download">
 
-      <button class="download__btn">Скачать приложение</button>
+      <h2>
+        <button class="download__btn">Скачать приложение</button>
+      </h2>
 
-        <ul class="download__icons-list">
-          <li class="download__icon  download__icon--apple"><a href="#">Apple</a></li>
-          <li class="download__icon  download__icon--android"><a href="#">Android</a></li>
-          <li class="download__icon  download__icon--win"><a href="#">Win</a></li>
-        </ul>
+      <ul class="download__icons-list">
+        <li class="download__icon  download__icon--apple"><a href="#">Apple</a></li>
+        <li class="download__icon  download__icon--android"><a href="#">Android</a></li>
+        <li class="download__icon  download__icon--win"><a href="#">Win</a></li>
+      </ul>
 
         <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
 
@@ -55,8 +57,7 @@
     <section class="advantages">
 
     <header class="advantages__header">
-      <h2>Устали от серости мегаполиса?</h2>
-      <h2>Нам есть, что вам предложить!</h2>
+      <h2>Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</h2>
     </header>
 
     <div class="advantages__item">
@@ -79,7 +80,9 @@
 
     <section class="reviews">
 
-      <div class="reviews__wrapper  slider">
+      <h2 class="reviews__title  visuallyhidden">Отзывы</h2>
+
+      <div class="reviews__contianer  slider">
 
         <input class="slider__input" type="radio" name="reviews" id="reviews__input-1" checked>
         <input class="slider__input" type="radio" name="reviews" id="reviews__input-2">
@@ -104,7 +107,11 @@
 
     <section class="pricelist">
 
-      <div class="pricelist__wrapper  slider">
+      <h2 class="pricelist__title  visuallyhidden">
+        Прайслист
+      </h2>
+
+      <div class="pricelist__container  slider">
 
         <input class="slider__input" type="radio" name="pricelist" id="pricelist__input-1">
         <input class="slider__input" type="radio" name="pricelist" id="pricelist__input-2" checked>
@@ -112,24 +119,35 @@
 
         <table class="pricelist__table">
 
-        <tr>
-          <th class="pricelist__caption">
-            <span class="pricelist__tariff"></span>
-            <span class="pricelist__price"></span>
-          </th>
-          <td class="pricelist__item">
-            <span class="pricelist__item-name"></span>
-            <span class="pricelist__option  pricelist__option--on"></span>
-          </td>
-          <td class="pricelist__item">
-            <span class="pricelist__item-name"></span>
-            <span class="pricelist__option  pricelist__option--on"></span>
-          </td>
-          <td class="pricelist__item">
-            <span class="pricelist__item-name"></span>
-            <span class="pricelist__option  pricelist__option--off"></span>
-          </td>
-        </tr>
+        <thead>
+          <tr>
+            <th class="pricelist__caption">
+              <span class="pricelist__tariff">Стандарт</span>
+              <span class="pricelist__price">3,99 USD</span>
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td class="pricelist__data">
+              <span class="pricelist__option">Розовый фильтр</span>
+              <span class="pricelist__switch  pricelist__switch--on">Есть</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="pricelist__data">
+              <span class="pricelist__option">Смайлики</span>
+              <span class="pricelist__switch  pricelist__switch--on">Нет</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="pricelist__data">
+              <span class="pricelist__option">Комментарии</span>
+              <span class="pricelist__switch  pricelist__switch--off">Нет</span>
+            </td>
+          </tr>
+        </tbody>
 
         </table>
 
@@ -151,7 +169,7 @@
 
         <h2 class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
 
-        <div class="contacts__list">
+        <ul class="contacts__list">
 
           <li class="contacts__item">
             <h3>Звоните:</h3>
@@ -172,16 +190,13 @@
             <p>ул. Большая Конюшенная, 19/8</p>
           </li>
 
-        </div>
+        </ul>
 
     </section>
 
-    <section class="map"></section>
+    <div class="map"></div>
 
     </footer>
-
-
-  </header>
 
 
   </body>
