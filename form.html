@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+
+<body>
+
+
+  <header class="page-header">
+
+      <div class="page-header__top">
+
+        <h1 class="logo  page-header__logo">Pink
+        </h1>
+
+        <button class="page-header__nav-toggle">
+        </button>
+
+        <nav class="main-nav  main-nav--closed  page-header__nav">
+
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item">Конкурс</li>
+            <li class="main-nav__item"><a href="#">HMTL Academy</a></li>
+          </ul>
+
+        </nav>
+
+      </div>
+
+      <h2>Конкурс на самое безбашеное путешествие с Пинк</h2>
+
+  </header>
+
+
+  <main>
+
+  <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+  </p>
+
+  <form action="" class="inquiry-form">
+
+    <section class="inquiry-form__userinfo  userinfo-inquiry">
+
+      <label class="userinfo-inquiry__label" for="inquiry-form__sirname">Фамилия:</label>
+      <input type="text" class="userinfo-inquiry__input" placeholder="Укажите фамилию" name="inquiry-form__sirname" id="inquiry-form__sirname">
+
+      <label class="userinfo-inquiry__label" for="inquiry-form__name">Имя:</label>
+      <input type="text" class="userinfo-inquiry__input" placeholder="Введите ваше имя" name="inquiry-form__name" id="inquiry-form__name">
+
+      <label class="userinfo-inquiry__label" for="inquiry-form__patronymic">Отчество:</label>
+      <input type="text" class="userinfo-inquiry__input" placeholder="Ну и отчество тоже" name="inquiry-form__patronymic" id="inquiry-form__patronymic">
+
+    </section>
+
+    <ul class="inquiry-form__list inquiry-form__list--achievements  list-inquiry">
+
+      <h3 class="list-inquiry__title">Ваши безбашенные<br>достижения в путешествии</h3>
+
+      <li>
+        <label class="list-inquiry__label" for="inquiry-form__shark">Сделал селфи с акулой</label>
+        <input class="list-inquiry__input" type="checkbox" name="inquiry-form__shark" id="inquiry-form__shark" checked>
+      </li>
+      <li>
+        <label class="list-inquiry__label" for="inquiry-form__chuck">Видел Чака Норриса</label>
+        <input class="list-inquiry__input" type="checkbox" name="inquiry-form__chuck" id="inquiry-form__chuck" checked>
+      </li>
+      <li>
+        <label class="list-inquiry__label" for="inquiry-form__sunburn">Обгорел на пляже</label>
+        <input class="list-inquiry__input" type="checkbox" name="inquiry-form__sunburn" id="inquiry-form__sunburn">
+      </li>
+      <li>
+        <label class="list-inquiry__label" for="inquiry-form__souvenir">Накупил сувениров</label>
+        <input class="list-inquiry__input" type="checkbox" name="inquiry-form__souvenir" id="inquiry-form__souvenir">
+      </li>
+      <li>
+        <label class="list-inquiry__label" for="inquiry-form__smashup">Разгромил отель</label>
+        <input class="list-inquiry__input" type="checkbox" name="inquiry-form__smashup" id="inquiry-form__smashup" checked>
+      </li>
+      <li>
+        <label class="list-inquiry__label" for="inquiry-form__tower">Удержал башню</label>
+        <input class="list-inquiry__input" type="checkbox" name="inquiry-form__tower" id="inquiry-form__tower">
+      </li>
+
+    </ul>
+
+
+    <section class="inquiry-form__userinfo  userinfo-inquiry">
+
+      <label class="userinfo-inquiry__label" for="inquiry-form__phone">Номерок телефончика</label>
+      <input type="tel" class="userinfo-inquiry__input" placeholder="Номер, пожалуйста" name="inquiry-form__phone" id="inquiry-form__phone">
+
+      <label class="userinfo-inquiry__label" for="inquiry-form__email">адресок почты</label>
+      <input type="email" class="userinfo-inquiry__input" placeholder="E-mail, пожалуйста" name="inquiry-form__email" id="inquiry-form__email">
+
+    </section>
+
+
+    <ul class="inquiry-form__list  inquiry-form__list--app  list-inquiry">
+
+      <h3 class="list-inquiry__title">С каким приложением<br>путешествовали?</h3>
+
+      <li>
+        <label for="inquir_-form__ios" class="list-inquiry__label">Pink для iOS</label>
+        <input class="list-inquiry__input" type="radio" name="list-inquiry__radio" value="ios" id="inquiry-form__ios" checked>
+      </li>
+      <li>
+        <label for="inquiry-form__android" class="list-inquiry__label">Pink на Android</label>
+        <input class="list-inquiry__input" type="radio" name="list-inquiry__radio" value="android" id="inquiry-form__android">
+      </li>
+      <li>
+        <label for="inquiry-form__win" class="list-inquiry__label">Windows Phone</label>
+        <input class="list-inquiry__input" type="radio" name="list-inquiry__radio" value="win" id="inquiry-form__win">
+      </li>
+
+    </ul>
+
+
+      <section class="inquiry-form__userinfo  userinfo-inquiry">
+
+      <label class="userinfo-inquiry__label" for="inquiry-form__desc">Опишите свои эмоции</label>
+      <textarea class="userinfo-inquiry__input  userinfo-inquiry__desc" name="inquiry-form__desc" id="inquiry-form__desc">Можно прям в красках, не стесняясь в выражениях</textarea>
+
+    </section>
+
+
+    <button class="inquiry-form__btn  inquiry-form__btn--submit">Отправить форму</button>
+
+    <p class="inquiry-form__note">
+      <span>*</span> — обязательные поля
+    </p>
+
+
+  </form>
+
+  </main>
+
+
+
+  <footer class="page-footer">
+
+    <div class="logo  page-footer__logo">Pink</div>
+
+    <ul class="page-footer__socials  socials">
+      <li class="socials__link  socials__link--tw"></li>
+      <li class="socials__link  socials__link--fb"></li>
+      <li class="socials__link  socials__link--yt"></li>
+    </ul>
+
+    <div class="page-footer__credentials">
+      <span>Разработано</span>
+      <img class="logo-htmlacademy" src="http://placehold.it/27x34" alt="Htmlacademy">
+    </div>
+
+  </footer>
+
+</body>
+
+
+</html>
