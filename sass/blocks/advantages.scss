@@ -1,0 +1,44 @@
+
+.advantages {
+    padding-bottom: 324px;
+    text-align: center;
+    font-family: $font-family;
+}
+
+.advantages__header {
+    margin-bottom: 119px;
+
+  h2{
+    margin: 0;
+    padding-top: 46px;
+    color: $color-main;
+    font-size: 2.4rem;
+    font-weight: 300;
+  }
+
+  @include container;
+}
+
+.advantages__item{
+    color:$color-main;
+    font-size: 1.4rem;
+    font-weight: 400;
+
+  h3 {
+    margin: 0;
+    margin-bottom: 2.4rem;
+    line-height: 2.4rem;
+    color: #000000;
+    font-size: 1.8rem;
+    font-weight: 700;  }
+
+    p:last-child{
+      margin-bottom: 40px;
+    }
+
+    &:last-child p{
+      margin-bottom: 0;
+    }
+
+  @include container;
+}

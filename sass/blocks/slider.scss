@@ -1,0 +1,54 @@
+@mixin slider__toggle {
+  display: inline-block;
+  font-size: 0;
+  width: 6px;
+  height: 6px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 3px solid transparent;
+  border-radius: 50%;
+}
+
+@mixin slider__toggle--checked {
+  background-color: #ffffff;
+  border-color: $color-main;
+}
+
+@mixin slider{
+
+  @for $i from 1 through 3 {
+    .slider__input:nth-of-type(#{$i}):checked ~ .slider__toggles label:nth-of-type(#{$i}) {
+        @include slider__toggle--checked;
+    }
+
+    .slider__input:nth-of-type(#{$i}):checked ~ .slider__list .slider__item--#{$i} {
+        display: block;
+    }
+  }
+
+}
+
+.slider__item {
+  display: none;
+}
+
+.slider__input {
+  display: none;
+}
+
+.slider__toggles {
+  font-size: 0;
+
+  & label {
+    margin-right: 13px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.slider__toggle{
+  @include slider__toggle;
+}
+
+@include slider;

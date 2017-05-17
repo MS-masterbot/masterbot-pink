@@ -1,0 +1,19 @@
+html {
+  font-size: $html-size-base;
+}
+
+.page {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  font-family: $font-family;
+  color: $color-main;
+}
+
+.visuallyhidden{
+  visibility: hidden;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border:none;
+}
