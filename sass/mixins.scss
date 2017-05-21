@@ -2,8 +2,6 @@
   width: $container-mobile;
   margin-left: auto;
   margin-right: auto;
-  /*outline: 1px dotted orange;
-  background-color: rgba(255, 0, 0, 0.3);*/
 }
 
 @mixin clearfix {
@@ -14,6 +12,8 @@
     content: "";
   }
 }
+
+
 
 
 

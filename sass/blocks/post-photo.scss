@@ -1,0 +1,79 @@
+.post-photo__container {
+  padding-top: 25px;
+  padding-left: 17px;
+  padding-right: 23px;
+  padding-bottom: 28px;
+  background-color: $color-grey-light;
+  box-sizing: border-box;
+  @include container;
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+.post-photo__img {
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+  @include container;
+
+  &--picked {
+    width: auto;
+
+    &::before {
+      content: "ПАНОРАМА ДНЯ";
+      position: absolute;
+      text-align: center;
+      top: 0;
+      right: 20px;
+      width: 140px;
+      height: 36px;
+      line-height: 36px;
+      background-color: $color-highlight;
+      color: #ffffff;
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      box-sizing: border-box;
+    }
+}
+
+  img {
+    width: 100%;
+  }
+
+}
+
+.post-photo__name {
+  display: inline-block;
+  margin: 0;
+  line-height: 2.4rem;
+  font-weight: 700;
+  font-size: $font-size;
+}
+
+.post-photo__date {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.post-photo__btn-heart {
+  width: 13px;
+  height: 12px;
+  margin-right: 19px;
+  padding: 0;
+  border: none;
+  font-size: 0;
+  vertical-align: middle;
+}
+
+.post-photo__counter {
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  color: $color-highlight;
+  text-transform: uppercase;
+}
+
+

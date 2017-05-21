@@ -1,6 +1,34 @@
 .page-header__inner {
-  height: 462px;
   background-color: #2a3a4a;
   background-image: url("../img/back-mobile-1x-jpg.jpg");
+}
+
+.page--index {
+
+  .page-header__inner {
+     height: 462px;
+  }
+
+}
+
+.page--photo {
+
+  .page-header__inner {
+    height: 237px;
+  }
+
+  .page-header__nav {
+      margin-bottom: 35px;
+  }
+}
+
+.page-header__title {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+
+  @include container;
 }
 

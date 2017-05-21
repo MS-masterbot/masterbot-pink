@@ -1,4 +1,26 @@
 .page {
   font-family: $font-family;
-  width: $screen-mobile;
+  min-width: $screen-mobile;
+}
+
+.page--photo {
+
+  .page__slogan {
+    line-height: 3rem;
+    text-align: center;
+    @include container;
+
+    &--top {
+      margin-top: 54px;
+      margin-bottom: 56px;
+    }
+
+    &--bottom {
+      margin-top: 49px;
+      margin-bottom: 48px;
+    }
+  }
+
+
+
 }
