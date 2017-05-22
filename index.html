@@ -3,50 +3,62 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
 
-  <body>
+  <body class="page page--index">
 
 
   <header class="page-header">
 
-      <div class="page-header__top">
-
-        <h1 class="logo  page-header__logo">Pink
-        </h1>
-
-        <button class="page-header__nav-toggle">
-        </button>
+    <div class="page-header__inner">
 
         <nav class="main-nav  main-nav--closed  page-header__nav">
 
-          <ul class="main-nav__list">
-            <li class="main-nav__item">Главная</li>
-            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a href="#">HMTL Academy</a></li>
-          </ul>
+            <div class="main-nav__top">
+              <div class="main-nav__top-inner">
 
-        </nav>
+                <h1 class="main-nav__logo-wrapper">
+                  <a class="logo" href="index.html">Pink</a>
+                </h1>
 
-      </div>
+                <div class="main-nav__toggle-wrapper">
+                  <button class="main-nav__toggle">
+                  </button>
+                </div>
+
+              </div>
+            </div>
+
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a>Главная</a></li>
+              <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+              <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+              <li class="main-nav__item"><a href="https://htmlacademy.ru/">HMTL Academy</a></li>
+            </ul>
+
+      </nav>
+
+    </div>
 
 
     <section class="download">
+      <div class="download__inner">
 
-      <h2>
-        <button class="download__btn">Скачать приложение</button>
-      </h2>
+        <h2>
+          <a class="download__btn" href="#">Скачать приложение</a>
+        </h2>
 
-      <ul class="download__icons-list">
-        <li class="download__icon  download__icon--apple"><a href="#">Apple</a></li>
-        <li class="download__icon  download__icon--android"><a href="#">Android</a></li>
-        <li class="download__icon  download__icon--win"><a href="#">Win</a></li>
-      </ul>
+        <ul class="download__icons-list">
+          <li class="download__icon  download__icon--apple"><a href="#">Apple</a></li>
+          <li class="download__icon  download__icon--android"><a href="#">Android</a></li>
+          <li class="download__icon  download__icon--win"><a href="#">Win</a></li>
+        </ul>
 
         <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
 
+      </div>
     </section>
 
     </header>
@@ -57,7 +69,7 @@
     <section class="advantages">
 
     <header class="advantages__header">
-      <h2>Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</h2>
+      <h2>Устали от серости мегаполиса?<br><br>Нам есть, что вам предложить!</h2>
     </header>
 
     <div class="advantages__item">
@@ -88,17 +100,23 @@
         <input class="slider__input" type="radio" name="reviews" id="reviews__input-2">
         <input class="slider__input" type="radio" name="reviews" id="reviews__input-3">
 
-        <ul class="reviews__list">
-          <li class="reviews__item  slider__item">
+        <ul class="reviews__list  slider__list">
+          <li class="reviews__item  slider__item  slider__item--1">
             <h3>Николай Петров</h3>
             <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </li>
+
+          <li class="reviews__item  slider__item  slider__item--2">
+          </li>
+
+          <li class="reviews__item  slider__item  slider__item--3">
           </li>
         </ul>
 
         <div class="reviews__toggles  slider__toggles">
-          <label class="reviews__toggle" for="reviews__input-1">1</label>
-          <label class="reviews__toggle" for="reviews__input-2">2</label>
-          <label class="reviews__toggle" for="reviews__input-3">3</label>
+          <label class="reviews__toggle  slider__toggle" for="reviews__input-1">1</label>
+          <label class="reviews__toggle  slider__toggle" for="reviews__input-2">2</label>
+          <label class="reviews__toggle  slider__toggle" for="reviews__input-3">3</label>
         </div>
       </div>
 
@@ -152,9 +170,9 @@
         </table>
 
         <div class="pricelist__toggles  slider__toggles">
-          <label class="pricelist__toggle" for="pricelist__input-1"></label>
-          <label class="pricelist__toggle" for="pricelist__input-2"></label>
-          <label class="pricelist__toggle" for="pricelist__input-3"></label>
+          <label class="pricelist__toggle  slider__toggle" for="pricelist__input-1"></label>
+          <label class="pricelist__toggle  slider__toggle" for="pricelist__input-2"></label>
+          <label class="pricelist__toggle  slider__toggle" for="pricelist__input-3"></label>
         </div>
 
       </div>
@@ -194,10 +212,14 @@
 
     </section>
 
-    <div class="map"></div>
+    <div class="map" id="map">
+    </div>
 
     </footer>
 
+<script src="js/main-nav.js"></script>
+
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3AMMsR6g0CCF-m6xpOlU9ElIa7qg4eUTRG&amp;width=100%25&amp;height=240&amp;id=map&amp;lang=ru_RU&amp;scroll=true"></script>
 
   </body>
 </html>

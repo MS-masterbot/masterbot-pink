@@ -1,0 +1,76 @@
+.pricelist__toggles {
+  text-align: center;
+}
+
+.pricelist__container {
+  padding-top: 124px;
+  padding-bottom: 47px;
+}
+
+.pricelist__table{
+  margin-bottom: 40px;
+  border-collapse: collapse;
+  border: 2px solid $color-grey;
+}
+
+th{
+  padding-top: 25px;
+  padding-bottom: 23px;
+  color: #ffffff;
+  background-color: $color-main;
+}
+
+th,td {
+  width: 280px;
+  border: 2px solid $color-grey;
+}
+
+td {
+  height: 63px;
+  padding-left: 24px;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.pricelist__tariff {
+  display: block;
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.pricelist__price {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.pricelist__data {
+  position: relative;
+}
+
+.pricelist__switch {
+
+  position: absolute;
+  display:block;
+  font-size: 0;
+
+  &--on {
+    top:22px;
+    right: 19px;
+    width: 31px;
+    height: 21px;
+  }
+
+  &--off {
+    top:17px;
+    right: 21px;
+    width: 27px;
+    height: 26px;
+  }
+
+  outline: 1px solid yellow;
+}

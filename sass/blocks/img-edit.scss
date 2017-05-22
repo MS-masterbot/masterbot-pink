@@ -1,0 +1,110 @@
+.img-edit {
+  padding-top: 20px;
+  background-color: $color-grey-light;
+}
+
+.img-edit__inner {
+  margin-bottom: 38px;
+  padding-bottom: 34px;
+  border-bottom: 1px solid transparentize($color-main, 0.9);
+}
+
+.img-edit__img {
+  margin-bottom: 42px;
+  @include container;
+}
+
+.img-edit__ctrl-list {
+  display: block;
+  margin:0;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  text-align: center;
+  @include container;
+}
+
+.img-edit__ctrl {
+  display: inline-block;
+  vertical-align: middle;
+  color: $color-main;
+  opacity: 0.3;
+
+  &--active {
+    color: $color-highlight;
+    opacity: 1;
+  }
+
+  &--size {
+    margin-right: 34px;
+    width: 44px;
+    height: 44px;
+  }
+
+  &--color {
+    margin-right: 40px;
+    width: 48px;
+    height: 43px;
+  }
+
+  &--bright {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.img-edit__range {
+  position: relative;
+  width: 240px;
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $color-main;
+  @include container;
+}
+
+.img-edit__range-toggle {
+  position: absolute;
+  top: -6px;
+  left: 70%;
+  width: 10px;
+  height: 10px;
+  background-color: $color-grey-light;
+  border:2px solid $color-highlight;
+  border-radius: 50%;
+}
+
+.img-edit__btn-list {
+  padding-bottom: 41px;
+  @include container;
+}
+
+
+.img-edit__btn,
+.img-edit__btn:focus,
+.img-edit__btn:active
+ {
+  display: block;
+  width: 280px;
+  height: 55px;
+  padding: 0;
+  border: 3px solid $color-highlight;
+  border-radius: 28px;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  font-weight: 700;
+  color: $color-highlight;
+  text-transform: capitalize;
+  text-decoration: none;
+  outline: none;
+
+  span {
+    position: relative;
+  }
+}
+
+
+.img-edit__btn--post {
+  margin-bottom: 12px;
+}
