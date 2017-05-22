@@ -3,12 +3,15 @@
   min-width: $screen-mobile;
 }
 
-.page--photo {
-
-  .page__slogan {
+.page-slogan {
     line-height: 3rem;
     text-align: center;
     @include container;
+}
+
+.page--photo {
+
+  .page-slogan {
 
     &--top {
       margin-top: 54px;
@@ -21,6 +24,18 @@
     }
   }
 
-
-
 }
+
+.page--form {
+
+  .page-slogan {
+
+    &--top {
+      margin-top: 54px;
+      margin-bottom: 49px;
+    }
+  }
+}
+
+
+
